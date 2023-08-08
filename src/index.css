@@ -5,23 +5,31 @@
 @keyframes animate-left {
   0% {
     transform: translateX(-200px);
+    opacity: 0;
   }
   100% {
     transform: translateX(0);
+    opacity: 1;
   }
 }
 
 @keyframes animate-right {
   0% {
     transform: translateX(200px);
+    opacity: 0;
   }
   100% {
     transform: translateX(0);
+    opacity: 1;
   }
 }
 
 .animate-left-active {
   animation: animate-left 0.8s ease-out;
+}
+
+.animate-left {
+
 }
 
 .animate-right-active {
