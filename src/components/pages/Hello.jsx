@@ -1,0 +1,27 @@
+import Navbar from "../Navbar";
+import Footer from "../Footer";
+
+const Hello = () => {
+    return (
+        <div className="bg-stone-100">
+          <Navbar />
+          <h1>안녕하세요</h1> <br />
+          <span>
+            사육신 건강지킴이 연구소 <br />
+            대표 황 순 창 입니다. <br /> <br />
+
+            건강지킴이 연구소는 <br />
+            사회보건기구(WHO)의 이념으로 <br />
+            사회적 육체적 정신적으로 안녕한 상태가 되어야 한다는 생각을 가지고 <br /> <br />
+
+            사육신과 관련된 제도적 향상을 위한 연구와 <br />
+            문제점 등 개선 건의와 <br />
+            사육신과 관련한 고충 등을 <br />
+            상담하여 안녕한 상태로 개선하고자 설립하였으며 <br /> <br />
+          </span>
+          <Footer />
+        </div>
+    )
+}
+
+export default Hello;
