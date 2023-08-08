@@ -1,3 +1,5 @@
+/* global kakao */
+
 import { useEffect, useRef } from "react";
 import Footer from "../Footer";
 import Navbar from "../Navbar";
@@ -6,7 +8,6 @@ const WayCome = () => {
   const container = useRef(null);
   
   useEffect(() => {
-    const timeoutId = setTimeout(() => {
       const options = {
         center: new window.kakao.maps.LatLng(37.222528, 126.9855495),
         level: 3
@@ -17,11 +18,7 @@ const WayCome = () => {
         position: markerPosition
       });
       marker.setMap(map);
-    }, 800); // 2초 (2000ms) 지연
 
-    return () => {
-      clearTimeout(timeoutId); // 컴포넌트가 언마운트될 때 타임아웃 클리어
-    };
   }, []);
 
   return (
