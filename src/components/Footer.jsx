@@ -1,12 +1,12 @@
 const Footer = () => {
   return (
     <div className="bottom-0 w-screen">
-      <div className="bg-stone-800 h-16 flex justify-center items-center">
+      {/* <div className="bg-stone-800 h-16 flex justify-center items-center">
         <ol className="flex gap-8 text-stone-200">
           <li>회사소개</li>
           <li>사업안내</li>
         </ol>
-      </div>
+      </div> */}
 
       <div className="footer-text bg-stone-900 p-4 flex flex-col text-stone-400 text-center justify-center items-center">
         <span className="text-sm">

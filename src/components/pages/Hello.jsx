@@ -3,10 +3,11 @@ import Footer from "../Footer";
 
 const Hello = () => {
     return (
-        <div className="bg-stone-100">
+        <div className="flex flex-col items-center">
           <Navbar />
-          <h1>안녕하세요</h1> <br />
+          <img className="w-52 my-10" src="/Hello.jpeg" alt="" />
           <span>
+            <span className="text-xl">반갑습니다! <br /> <br /></span>
             사육신 건강지킴이 연구소 <br />
             대표 황 순 창 입니다. <br /> <br />
 
