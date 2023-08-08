@@ -5,8 +5,7 @@ import Navbar from "../Navbar";
 const WayCome = () => {
 
   const container = useRef(null);
-  
-  useEffect(() => {
+  window.onload = function () {
     const options = {
       center: new window.kakao.maps.LatLng(37.222528, 126.9855495),
       level: 3
@@ -17,7 +16,7 @@ const WayCome = () => {
       position: markerPosition
     });
     marker.setMap(map);
-  }, []);
+  }
 
   return (
     <div className="w-screen h-screen flex flex-col items-center">
